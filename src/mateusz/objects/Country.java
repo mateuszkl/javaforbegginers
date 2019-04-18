@@ -3,9 +3,7 @@ package mateusz.objects;
 public class Country {
 
     private String name;
-
     private int area;
-
     private int population;
 
     public Country(String name, int area, int population) {
