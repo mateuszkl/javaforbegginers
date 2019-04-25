@@ -1,12 +1,16 @@
 package mateusz.collections;
 
+import mateusz.inheritance.animals.Beaver;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Queue;
 
 public class MapsExample {
 
     public static void main(String[] args) {
         Map<Integer, String> exampleMap = new HashMap<>();
+
 
         exampleMap.put(1, "Mateusz");
         exampleMap.put(2, "Michal");
@@ -40,5 +44,13 @@ public class MapsExample {
 
         System.out.println(students.get(124L));
         System.out.println(students.get(999L));
+
+
+        Map<Integer, Beaver> beaverMap = new HashMap<>();
+        beaverMap.put(1, new Beaver(1, "name"));
+        Beaver beaver = beaverMap.get(1);
+
+        Character c = 'v';
+
     }
 }
